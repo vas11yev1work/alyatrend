@@ -1,0 +1,113 @@
+@import "vars";
+
+header {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  height: 94px;
+  display: flex;
+  align-items: center;
+  .container {
+    height: 100%;
+  }
+  .header-content-wrap {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header-content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .logo {
+        margin-right: 100px;
+      }
+      .menu {
+        height: 100%;
+        margin-right: 100px;
+        display: flex;
+        align-items: center;
+        .menu-item {
+          height: 100%;
+          margin-right: 42px;
+          &:last-child {
+            margin-right: 0;
+          }
+          .menu-item-link {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 14px;
+            color: $color-secondary4;
+            position: relative;
+          }
+          &.active {
+            .menu-item-link {
+              color: $color-brand;
+              &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                width: 100%;
+                background-color: $color-brand;
+              }
+            }
+          }
+        }
+      }
+      .social-networks {
+        display: flex;
+        align-items: center;
+        .subscribe-text {
+          color: $color-secondary3;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          margin-right: 20px;
+        }
+        .network {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $color-brand;
+          height: 38px;
+          width: 38px;
+          margin-right: 18px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .search-wrap {
+      display: flex;
+      .search-field {
+        height: 38px;
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        width: 160px;
+        font-size: 12px;
+        line-height: 14px;
+        &::placeholder {
+        }
+      }
+      .search-button {
+        height: 38px;
+        width: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}
