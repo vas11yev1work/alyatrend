@@ -1,0 +1,19 @@
+@import "vars";
+
+.category-extra {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  .section-title {
+    margin-bottom: 52px;
+  }
+  .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $main-gap;
+    .other-posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 34px 18px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "vars";
+
+.posts {
+  margin-bottom: 70px;
+  .section-content {
+    .section-title {
+      margin-bottom: 35px;
+    }
+    .posts-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: $main-gap;
+      .post-item {
+        .post-info {
+          padding: 40px 32px;
+          .post-title {
+            margin-bottom: 22px;
+          }
+          .post-description-wrap {
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .post-description {
+              max-width: 287px;
+            }
+          }
+          .counts {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 32px;
+          }
+        }
+      }
+    }
+    .show-more {
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

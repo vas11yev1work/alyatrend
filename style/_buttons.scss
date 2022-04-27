@@ -1,0 +1,49 @@
+@import "vars";
+
+.brand-btn {
+  height: 50px;
+  padding: 0 40px;
+  background-color: $color-brand;
+  color: $color-white;
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 0 0 20px rgba(178, 17, 21, 0.3);
+  }
+  &.shadow {
+    box-shadow: 0 0 20px rgba(178, 17, 21, 0.3);
+    &:hover {
+      box-shadow: 0 0 20px rgba(178, 17, 21, 0.45);
+    }
+  }
+}
+
+.link-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: $color-brand;
+  border: none;
+  border-radius: 0;
+}
+
+.secondary-button {
+  height: 44px;
+  padding: 0 60px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  background-color: $color-white;
+  border: 1px solid rgba(40, 42, 46, 0.12);
+  transition: 0.2s;
+  color: $color-secondary2;
+  &:hover {
+    border-color: rgba(40, 42, 46, 0.3);
+  }
+}

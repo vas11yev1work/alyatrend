@@ -1,0 +1,16 @@
+@import "vars";
+
+.categories {
+  margin-bottom: 80px;
+  .section-content {
+    margin-top: 52px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: $main-gap;
+    .categories-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: $main-gap;
+    }
+  }
+}

@@ -1,10 +1,11 @@
 @import "vars";
 
 header {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: $main-shadow;
   height: 94px;
   display: flex;
   align-items: center;
+  background-color: $color-white;
   .container {
     height: 100%;
   }
@@ -28,7 +29,7 @@ header {
         align-items: center;
         .menu-item {
           height: 100%;
-          margin-right: 42px;
+          margin-right: $main-gap;
           &:last-child {
             margin-right: 0;
           }
@@ -60,53 +61,6 @@ header {
             }
           }
         }
-      }
-      .social-networks {
-        display: flex;
-        align-items: center;
-        .subscribe-text {
-          color: $color-secondary3;
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 14px;
-          margin-right: 20px;
-        }
-        .network {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: $color-brand;
-          height: 38px;
-          width: 38px;
-          margin-right: 18px;
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
-    }
-    .search-wrap {
-      display: flex;
-      .search-field {
-        height: 38px;
-        background-color: transparent;
-        border-radius: 0;
-        border: none;
-        width: 160px;
-        font-size: 12px;
-        line-height: 14px;
-        &::placeholder {
-        }
-      }
-      .search-button {
-        height: 38px;
-        width: 38px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        border: none;
-        border-radius: 0;
-        background-color: transparent;
       }
     }
   }

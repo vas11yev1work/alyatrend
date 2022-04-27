@@ -1,0 +1,28 @@
+.interests {
+  margin-bottom: 60px;
+  .section-content {
+    .section-title {
+      margin-bottom: 40px;
+    }
+    .interests-items {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 28px;
+      .interests-item {
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .post-info {
+          padding: 34px 32px;
+          .post-title {
+            margin-bottom: 10px;
+          }
+          .post-description {
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}

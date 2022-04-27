@@ -2,9 +2,21 @@
 
 // global
 @import "vars";
+@import "global";
 
 // sections
 @import "header";
+@import "buttons";
+@import "posts";
+@import "promos";
+@import "categories";
+@import "category-extra";
+@import "news";
+@import "footer";
+@import "breadcrumbs";
+@import "posts-page";
+@import "interests";
+@import "about";
 
 .container {
   max-width: 1400px;
@@ -16,6 +28,7 @@ body {
   overflow-x: hidden;
   background-color: $color-white;
   font-family: 'Montserrat', sans-serif;
+  color: $color-black;
 }
 
 *, *::before, *::after {
