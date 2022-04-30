@@ -5,6 +5,10 @@ h2.section-title {
   font-size: 26px;
   line-height: 36px;
   text-transform: uppercase;
+  &.large {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
 
 hr.divider {

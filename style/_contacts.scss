@@ -1,0 +1,95 @@
+@import "vars";
+
+.contacts {
+  padding-top: 20px;
+  margin-bottom: 80px;
+  .section-content {
+    max-width: 570px;
+    .section-title {
+      margin-bottom: 20px;
+      &:first-child {
+        margin-bottom: 38px;
+      }
+    }
+    .section-description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: 'Gilroy', sans-serif;
+      a {
+        color: $color-brand;
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &.mail {
+        max-width: 393px;
+        color: $color-secondary2;
+      }
+    }
+    .social-networks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 46px;
+      margin-top: 38px;
+      .network-item {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        .link-icon-button {
+          margin-right: 22px;
+        }
+        .button-text {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          font-family: 'Gilroy', sans-serif;
+          color: $color-brand;
+        }
+      }
+    }
+    .contacts-form {
+      margin-top: 28px;
+      .form-item-wrap {
+        display: block;
+        margin-bottom: 18px;
+        &:last-child {
+          margin-bottom: 24px;
+        }
+      }
+      .form-item {
+        width: 100%;
+        border: 1px solid $main-border;
+        border-radius: 0;
+        padding: 12px 26px;
+        font-family: 'Gilroy', sans-serif;
+        color: $color-black;
+        letter-spacing: 0.14em;
+        transition: 0.2s;
+        &:hover {
+          border-color: rgba(40, 42, 26, 0.3);
+        }
+        &::placeholder {
+          color: rgba(40, 42, 46, 0.5);
+        }
+      }
+      input {
+        height: 44px;
+      }
+      textarea {
+        height: 90px;
+        resize: none;
+      }
+      button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 26px;
+      }
+    }
+  }
+}

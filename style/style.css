@@ -5,6 +5,10 @@ h2.section-title {
   line-height: 36px;
   text-transform: uppercase;
 }
+h2.section-title.large {
+  font-size: 36px;
+  line-height: 48px;
+}
 
 hr.divider {
   width: 100%;
@@ -172,7 +176,11 @@ header .header-content-wrap .header-content .menu .menu-item.active .menu-item-l
   border-color: rgba(40, 42, 46, 0.3);
 }
 
+.typical-post:hover .post-info {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
 .typical-post .post-info {
+  transition: 0.2s;
   background: #FFFFFF;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
@@ -180,6 +188,12 @@ header .header-content-wrap .header-content .menu .menu-item.active .menu-item-l
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
+}
+.typical-post .post-large-title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
   text-transform: uppercase;
 }
 .typical-post .post-description {
@@ -204,6 +218,14 @@ header .header-content-wrap .header-content .menu .menu-item.active .menu-item-l
 .typical-post .counter {
   display: flex;
   align-items: center;
+}
+.typical-post .counter.small .counter-value {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+.typical-post .counter.small .counter-value.up {
+  font-size: 11px;
 }
 .typical-post .counter .counter-image {
   height: 20px;
@@ -243,6 +265,9 @@ header .header-content-wrap .header-content .menu .menu-item.active .menu-item-l
 
 .main-post {
   text-decoration: none;
+}
+.main-post:hover .post-title {
+  text-decoration: underline;
 }
 .main-post .post-image {
   display: flex;
@@ -345,6 +370,9 @@ header .header-content-wrap .header-content .menu .menu-item.active .menu-item-l
   margin-bottom: 35px;
   text-align: center;
 }
+.popular-posts-block-wrap .popular-posts-block .posts .popular-post:hover .post-link {
+  text-decoration: underline;
+}
 .popular-posts-block-wrap .popular-posts-block .posts .popular-post:last-child {
   margin-bottom: 0;
 }
@@ -387,7 +415,7 @@ header .header-content-wrap .header-content .menu .menu-item.active .menu-item-l
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 14px;
+  padding: 5px 12px;
   background-color: #B21115;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -397,6 +425,12 @@ header .header-content-wrap .header-content .menu .menu-item.active .menu-item-l
   text-decoration: none;
   margin-right: 12px;
   margin-bottom: 14px;
+  border: 1px solid #B21115;
+  transition: 0.1s;
+}
+.popular-posts-block-wrap .hashtags .hashtags-list .hashtag:hover {
+  background-color: #FFFFFF;
+  color: #B21115;
 }
 
 .square-image {
@@ -497,6 +531,10 @@ header .header-content-wrap .header-content .menu .menu-item.active .menu-item-l
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  transition: 0.2s;
+}
+.promos .section-content .promo-item:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 .promos .section-content .promo-item .text-wrap {
   padding: 30px 0 30px 24px;
@@ -843,6 +881,9 @@ footer .footer-info .rights {
 .read-more {
   margin-bottom: 70px;
 }
+.read-more .section-title {
+  margin-bottom: 42px;
+}
 .read-more .section-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -864,6 +905,481 @@ footer .footer-info .rights {
   align-items: center;
   justify-content: space-between;
   margin-top: 24px;
+}
+
+.contacts {
+  padding-top: 20px;
+  margin-bottom: 80px;
+}
+.contacts .section-content {
+  max-width: 570px;
+}
+.contacts .section-content .section-title {
+  margin-bottom: 20px;
+}
+.contacts .section-content .section-title:first-child {
+  margin-bottom: 38px;
+}
+.contacts .section-content .section-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", sans-serif;
+}
+.contacts .section-content .section-description a {
+  color: #B21115;
+  text-decoration: none;
+  font-weight: 500;
+}
+.contacts .section-content .section-description a:hover {
+  text-decoration: underline;
+}
+.contacts .section-content .section-description.mail {
+  max-width: 393px;
+  color: rgba(40, 42, 46, 0.7);
+}
+.contacts .section-content .social-networks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 46px;
+  margin-top: 38px;
+}
+.contacts .section-content .social-networks .network-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.contacts .section-content .social-networks .network-item .link-icon-button {
+  margin-right: 22px;
+}
+.contacts .section-content .social-networks .network-item .button-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Gilroy", sans-serif;
+  color: #B21115;
+}
+.contacts .section-content .contacts-form {
+  margin-top: 28px;
+}
+.contacts .section-content .contacts-form .form-item-wrap {
+  display: block;
+  margin-bottom: 18px;
+}
+.contacts .section-content .contacts-form .form-item-wrap:last-child {
+  margin-bottom: 24px;
+}
+.contacts .section-content .contacts-form .form-item {
+  width: 100%;
+  border: 1px solid rgba(40, 42, 46, 0.12);
+  border-radius: 0;
+  padding: 12px 26px;
+  font-family: "Gilroy", sans-serif;
+  color: #282A2E;
+  letter-spacing: 0.14em;
+  transition: 0.2s;
+}
+.contacts .section-content .contacts-form .form-item:hover {
+  border-color: rgba(40, 42, 26, 0.3);
+}
+.contacts .section-content .contacts-form .form-item::placeholder {
+  color: rgba(40, 42, 46, 0.5);
+}
+.contacts .section-content .contacts-form input {
+  height: 44px;
+}
+.contacts .section-content .contacts-form textarea {
+  height: 90px;
+  resize: none;
+}
+.contacts .section-content .contacts-form button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 26px;
+}
+
+.lifehacks {
+  padding-top: 20px;
+  margin-bottom: 80px;
+}
+.lifehacks .section-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 42px;
+}
+.lifehacks .section-content .lifehacks-posts .action-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.lifehacks .section-content .lifehacks-posts .lifehack {
+  margin-bottom: 52px;
+  display: block;
+  text-decoration: none;
+}
+.lifehacks .section-content .lifehacks-posts .lifehack:hover .post-large-title {
+  text-decoration: underline;
+}
+.lifehacks .section-content .lifehacks-posts .lifehack:last-child {
+  margin-bottom: 0;
+}
+.lifehacks .section-content .lifehacks-posts .lifehack .post-large-title {
+  margin-bottom: 16px;
+  color: #282A2E;
+}
+.lifehacks .section-content .lifehacks-posts .lifehack .post-text-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.lifehacks .section-content .lifehacks-posts .lifehack .post-text-info .post-date {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 26px;
+  font-family: "Gilroy", sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(40, 42, 46, 0.7);
+}
+.lifehacks .section-content .lifehacks-posts .lifehack .post-text-info .counts {
+  display: flex;
+}
+.lifehacks .section-content .lifehacks-posts .lifehack .post-text-info .counts .counter {
+  margin-right: 36px;
+}
+.lifehacks .section-content .lifehacks-posts .lifehack .post-text-info .counts .counter:last-child {
+  margin-right: 0;
+}
+.lifehacks .section-content .lifehacks-posts .lifehack .lifehack-image {
+  max-height: 470px;
+  width: 100%;
+  object-fit: cover;
+}
+.lifehacks .section-content .popular-wrap .popular-posts-block-wrap {
+  position: sticky;
+  top: 42px;
+}
+
+.current-post {
+  margin-bottom: 72px;
+}
+.current-post .section-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 42px;
+}
+.current-post .section-content .post-content .go-back {
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border: none;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(40, 42, 46, 0.6);
+}
+.current-post .section-content .post-content .go-back img {
+  margin-right: 10px;
+}
+.current-post .section-content .post-content .section-title {
+  margin-bottom: 18px;
+}
+.current-post .section-content .post-content > .post-info {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.current-post .section-content .post-content > .post-info .upper-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "Gilroy", sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(40, 42, 46, 0.7);
+}
+.current-post .section-content .post-content > .post-info .counter {
+  display: flex;
+  align-items: center;
+}
+.current-post .section-content .post-content > .post-info .counter img {
+  margin-right: 16px;
+}
+.current-post .section-content .post-content .post-content-area .image-wrap {
+  margin-bottom: 42px;
+}
+.current-post .section-content .post-content .post-content-area .image-wrap img {
+  display: flex;
+}
+.current-post .section-content .post-content .post-content-area .image-wrap .sign {
+  display: block;
+  margin-top: 26px;
+}
+.current-post .section-content .post-content .post-content-area .image-wrap .sign mark {
+  color: #B21115;
+  background-color: transparent;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+.current-post .section-content .post-content .post-content-area .post-description-wrap {
+  margin-bottom: 42px;
+}
+.current-post .section-content .post-content .post-content-area .post-description-wrap .post-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Gilroy", sans-serif;
+  letter-spacing: 0.02em;
+  margin-bottom: 22px;
+}
+.current-post .section-content .post-content .post-content-area .post-description-wrap .post-description:last-child {
+  margin-bottom: 0;
+}
+.current-post .section-content .post-content .post-content-area .post-head {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.current-post .section-content .post-content .post-detailed-info {
+  border-top: 1px solid rgba(40, 42, 46, 0.12);
+  padding-top: 32px;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 84px;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .counts {
+  display: flex;
+  align-items: center;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .counts .counter {
+  display: flex;
+  align-items: center;
+  margin-right: 56px;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .counts .counter:last-child {
+  margin-right: 0;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .counts .counter img {
+  height: 20px;
+  width: 20px;
+  margin-right: 14px;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .counts .counter .counter-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(40, 42, 46, 0.7);
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .share {
+  display: flex;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .share .share-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(40, 42, 46, 0.7);
+  margin-right: 18px;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .share .shares {
+  display: flex;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .share .shares .share-item {
+  text-decoration: none;
+  height: 16px;
+  width: 16px;
+  margin-right: 18px;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .share .shares .share-item:last-child {
+  margin-right: 0;
+}
+.current-post .section-content .post-content .post-detailed-info .post-details .share .shares .share-item img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.current-post .section-content .post-content .post-detailed-info .last-posts {
+  margin-bottom: 84px;
+}
+.current-post .section-content .post-content .post-detailed-info .last-posts .section-title {
+  margin-bottom: 42px;
+}
+.current-post .section-content .post-content .post-detailed-info .last-posts .posts-list .post-item {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 12px;
+}
+.current-post .section-content .post-content .post-detailed-info .last-posts .posts-list .post-item:last-child {
+  margin-bottom: 0;
+}
+.current-post .section-content .post-content .post-detailed-info .last-posts .posts-list .post-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 8px;
+  width: 8px;
+  background-color: #B21115;
+  border-radius: 50%;
+}
+.current-post .section-content .post-content .post-detailed-info .last-posts .posts-list .post-item a {
+  color: #282A2E;
+  text-decoration: none;
+}
+.current-post .section-content .post-content .post-detailed-info .last-posts .posts-list .post-item a:hover {
+  text-decoration: underline;
+  color: #B21115;
+}
+.current-post .section-content .post-content .post-detailed-info .comments-form {
+  margin-bottom: 84px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments-form .comments-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-family: "Gilroy", sans-serif;
+  color: rgba(40, 42, 46, 0.7);
+  margin-bottom: 22px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments-form .create-comment {
+  border: 1px solid rgba(40, 42, 46, 0.12);
+  height: 44px;
+  display: flex;
+  transition: 0.2s;
+}
+.current-post .section-content .post-content .post-detailed-info .comments-form .create-comment:hover {
+  border-color: rgba(40, 42, 26, 0.3);
+}
+.current-post .section-content .post-content .post-detailed-info .comments-form .create-comment label {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.current-post .section-content .post-content .post-detailed-info .comments-form .create-comment label input {
+  height: inherit;
+  width: inherit;
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  padding-left: 26px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.14em;
+}
+.current-post .section-content .post-content .post-detailed-info .comments-form .create-comment label input::placeholder {
+  color: rgba(40, 42, 46, 0.5);
+}
+.current-post .section-content .post-content .post-detailed-info .comments-form .create-comment .send-comment {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  width: 60px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments {
+  margin-bottom: 84px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .section-title {
+  margin-bottom: 32px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .section-title sub {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list {
+  margin-bottom: 32px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment:last-child {
+  margin-bottom: 0;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment .avatar {
+  height: 76px;
+  width: 76px;
+  object-fit: cover;
+  margin-right: 22px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment .comment-content {
+  padding-top: 2px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment .comment-content .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment .comment-content .user-info .username {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment .comment-content .user-info .comment-date {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(40, 42, 46, 0.6);
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment .comment-content .comment-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Gilroy", sans-serif;
+  margin-bottom: 6px;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment .comment-content .reply {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  height: 22px;
+  color: rgba(40, 42, 46, 0.6);
+}
+.current-post .section-content .post-content .post-detailed-info .comments .comments-list .comment .comment-content .reply:hover {
+  text-decoration: underline;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .show-all-comments {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "Gilroy", sans-serif;
+  letter-spacing: 0.3em;
+  text-decoration: underline;
+  color: rgba(40, 42, 46, 0.7);
+  text-transform: uppercase;
+}
+.current-post .section-content .post-content .post-detailed-info .comments .show-all-comments:hover {
+  text-decoration: none;
+}
+.current-post .section-content .post-content .post-detailed-info .read-more .section-content {
+  padding-right: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.current-post .section-content .popular-wrap .popular-posts-block-wrap {
+  position: sticky;
+  top: 42px;
 }
 
 .container {

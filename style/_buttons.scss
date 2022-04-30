@@ -40,7 +40,7 @@
   text-transform: uppercase;
   letter-spacing: 0.3em;
   background-color: $color-white;
-  border: 1px solid rgba(40, 42, 46, 0.12);
+  border: 1px solid $main-border;
   transition: 0.2s;
   color: $color-secondary2;
   &:hover {

@@ -1,0 +1,70 @@
+@import "vars";
+
+.lifehacks {
+  padding-top: 20px;
+  margin-bottom: 80px;
+  .section-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: $main-gap;
+    .lifehacks-posts {
+      .action-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .lifehack {
+        margin-bottom: 52px;
+        display: block;
+        text-decoration: none;
+        &:hover {
+          .post-large-title {
+            text-decoration: underline;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .post-large-title {
+          margin-bottom: 16px;
+          color: $color-black;
+        }
+        .post-text-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 16px;
+          .post-date {
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 26px;
+            font-family: 'Gilroy', sans-serif;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: $color-secondary2;
+          }
+          .counts {
+            display: flex;
+            .counter {
+              margin-right: 36px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+        .lifehack-image {
+          max-height: 470px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .popular-wrap {
+      .popular-posts-block-wrap {
+        position: sticky;
+        top: $main-gap;
+      }
+    }
+  }
+}
