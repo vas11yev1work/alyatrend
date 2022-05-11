@@ -1221,6 +1221,16 @@ footer .footer-info .rights {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 42px;
 }
+@media screen and (max-width: 1460px) {
+  .posts .section-content .posts-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .posts .section-content .posts-list {
+    grid-template-columns: 1fr;
+  }
+}
 .posts .section-content .posts-list .post-item .post-info {
   padding: 40px 32px;
 }
@@ -1241,6 +1251,11 @@ footer .footer-info .rights {
   align-items: center;
   justify-content: space-between;
   margin-top: 32px;
+}
+@media screen and (max-width: 992px) {
+  .posts .section-content .posts-list .post-item .post-info .counts .counter .mob {
+    display: none;
+  }
 }
 .posts .section-content .show-more {
   padding-top: 50px;

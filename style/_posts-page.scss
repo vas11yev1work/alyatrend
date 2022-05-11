@@ -10,6 +10,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: $main-gap;
+      @media screen and (max-width: 1460px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
       .post-item {
         .post-info {
           padding: 40px 32px;
@@ -30,6 +36,13 @@
             align-items: center;
             justify-content: space-between;
             margin-top: 32px;
+            .counter {
+              .mob {
+                @media screen and (max-width: 992px) {
+                  display: none;
+                }
+              }
+            }
           }
         }
       }
