@@ -8,6 +8,15 @@
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       grid-gap: 28px;
+      @media screen and (max-width: 1460px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media screen and (max-width: 576px) {
+        grid-template-columns: 1fr;
+      }
       .interests-item {
         img {
           width: 100%;

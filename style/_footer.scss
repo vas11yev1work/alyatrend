@@ -6,12 +6,41 @@ footer {
     padding-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    @media screen and (max-width: 992px) {
+      grid-template-columns: none;
+      grid-template-areas: "logo logo logo" "links links networks";
+      grid-row-gap: $main-gap;
+      .logo {
+        grid-area: logo;
+      }
+      .links {
+        grid-area: links;
+      }
+      .networks {
+        grid-area: networks;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-areas: "logo" "links" "networks";
+    }
     .links {
       display: flex;
+      @media screen and (max-width: 576px) {
+        flex-direction: column;
+        .link-block {
+          margin-bottom: $main-gap;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
       .link-block {
         display: flex;
         flex-direction: column;
         margin-right: 100px;
+        @media screen and (max-width: 1460px) {
+          margin-right: 60px;
+        }
         &:last-child {
           margin-right: 0;
         }
@@ -40,6 +69,13 @@ footer {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-end;
+      @media screen and (max-width: 768px) {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        .search-wrap {
+          margin-bottom: $main-gap;
+        }
+      }
     }
   }
   .footer-info {
@@ -47,7 +83,14 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 50px 0;
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .copy {
+      @media screen and (max-width: 576px) {
+        margin-bottom: 10px;
+      }
       display: flex;
       align-items: center;
       font-weight: 400;
@@ -63,6 +106,9 @@ footer {
       font-size: 13px;
       line-height: 100%;
       opacity: 0.5;
+      @media screen and (max-width: 576px) {
+        opacity: 1;
+      }
     }
   }
 }

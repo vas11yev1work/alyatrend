@@ -6,6 +6,9 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: $main-gap;
+    @media screen and (max-width: 1460px) {
+      grid-template-columns: 1fr;
+    }
     .post-content {
       .go-back {
         text-decoration: none;
@@ -50,8 +53,17 @@
       }
       .post-content-area {
         .image-wrap {
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
           img {
             display: flex;
+          }
+          .post-image {
+            width: 100%;
           }
           margin-bottom: $main-gap;
           .sign {
@@ -98,6 +110,13 @@
           align-items: center;
           justify-content: space-between;
           margin-bottom: 2 * $main-gap;
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            .counts {
+              margin-bottom: 16px;
+            }
+          }
           .counts {
             display: flex;
             align-items: center;
@@ -105,6 +124,9 @@
               display: flex;
               align-items: center;
               margin-right: 56px;
+              @media screen and (max-width: 768px) {
+                margin-right: 24px;
+              }
               &:last-child {
                 margin-right: 0;
               }
@@ -159,13 +181,14 @@
               position: relative;
               padding-left: 18px;
               margin-bottom: 12px;
+              line-height: 24px;
               &:last-child {
                 margin-bottom: 0;
               }
               &::before {
                 content: '';
                 position: absolute;
-                top: 50%;
+                top: 11px;
                 left: 0;
                 transform: translateY(-50%);
                 height: 8px;
@@ -315,6 +338,12 @@
           .section-content {
             padding-right: 0;
             grid-template-columns: 1fr 1fr 1fr;
+            @media screen and (max-width: 992px) {
+              grid-template-columns: 1fr 1fr;
+            }
+            @media screen and (max-width: 768px) {
+              grid-template-columns: 1fr;
+            }
           }
         }
       }

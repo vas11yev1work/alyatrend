@@ -10,10 +10,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: $main-gap;
+    @media screen and (max-width: 1460px) {
+      grid-template-columns: 1fr;
+    }
     .other-posts {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 34px 18px;
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+    .large-post-wrap {
+      @media screen and (max-width: 1460px) {
+        display: none;
+      }
     }
   }
 }

@@ -22,20 +22,69 @@
             <img src="./assets/logo.svg" alt="logo">
           </a>
           <ul class="menu">
-            <li class="menu-item active">
-              <a href="#" class="menu-item-link">AliExpress</a>
+            <li class="menu-item dropdown active">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">AliExpress</span>
+              </a>
+              <div class="dropdown-block">
+                <ul class="links">
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Посты</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Хочу/Могу</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Базовый гардероб</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Луки-неделька</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Aliexpress для дома</a>
+                  </li>
+                </ul>
+                <div class="dropdown-posts">
+                  <a href="#" class="post-item">
+                    <div class="image-wrap square-image">
+                      <img src="./assets/current-post-image.jpg" alt="post-image">
+                    </div>
+                    <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+                  </a>
+                  <a href="#" class="post-item">
+                    <div class="image-wrap square-image">
+                      <img src="./assets/current-post-image.jpg" alt="post-image">
+                    </div>
+                    <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+                  </a>
+                  <a href="#" class="post-item">
+                    <div class="image-wrap square-image">
+                      <img src="./assets/current-post-image.jpg" alt="post-image">
+                    </div>
+                    <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+                  </a>
+                </div>
+              </div>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Лайфхаки</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Лайфхаки</span>
+              </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Q&A</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Q&A</span>
+              </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Об авторе</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Об авторе</span>
+              </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Контакты</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Контакты</span>
+              </a>
             </li>
           </ul>
           <div class="social-networks">
@@ -48,6 +97,23 @@
             </a>
           </div>
         </div>
+        <div class="search-main-wrap">
+          <form class="search-wrap">
+            <label>
+              <input class="search-field" placeholder="Найти интересную тему.." type="text" />
+            </label>
+            <button type="submit" class="search-button">
+              <img src="./assets/icons/search.svg" alt="search">
+            </button>
+          </form>
+          <button class="menu-button">
+            <img src="./assets/icons/menu.svg" alt="menu">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-mobile">
+      <div class="container">
         <form class="search-wrap">
           <label>
             <input class="search-field" placeholder="Найти интересную тему.." type="text" />
@@ -56,410 +122,590 @@
             <img src="./assets/icons/search.svg" alt="search">
           </button>
         </form>
+        <div class="header-mobile-content">
+          <ul class="menu">
+            <li class="menu-item active">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">AliExpress</span>
+              </a>
+              <ul class="nested-menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Посты</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Хочу/Могу</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Базовый гардероб</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Луки-неделька</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Aliexpress для дома</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Лайфхаки</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Q&A</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Об авторе</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Контакты</span>
+              </a>
+            </li>
+          </ul>
+          <div class="recent-posts">
+            <a href="#" class="post-item">
+              <div class="image-wrap square-image">
+                <img src="./assets/current-post-image.jpg" alt="post-image">
+              </div>
+              <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+            </a>
+            <a href="#" class="post-item">
+              <div class="image-wrap square-image">
+                <img src="./assets/current-post-image.jpg" alt="post-image">
+              </div>
+              <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+            </a>
+            <a href="#" class="post-item">
+              <div class="image-wrap square-image">
+                <img src="./assets/current-post-image.jpg" alt="post-image">
+              </div>
+              <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-  <section class="main-posts">
-    <div class="container">
-      <div class="posts-wrap">
-        <a href="#" class="main-post">
-          <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
-          <div class="info-line">
-            <div class="post-left">
-              <span class="post-category">Луки - неделька</span>
-              <span class="post-date">05.07.2021</span>
-            </div>
-            <div class="post-right">
-              <div class="count">
-                <img src="./assets/icons/comment.svg" alt="comment">
-                <span class="count-value">23</span>
+  <main>
+    <section class="main-posts">
+      <div class="container">
+        <div class="posts-wrap">
+          <a href="#" class="main-post">
+            <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
+            <div class="info-line">
+              <div class="post-left">
+                <span class="post-category">Луки - неделька</span>
+                <span class="post-date">05.07.2021</span>
               </div>
-              <div class="count">
-                <img src="./assets/icons/like.svg" alt="like">
-                <span class="count-value">91,4 тыс</span>
-              </div>
-            </div>
-          </div>
-          <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
-        </a>
-        <a href="#" class="main-post">
-          <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
-          <div class="info-line">
-            <div class="post-left">
-              <span class="post-category">Луки - неделька</span>
-              <span class="post-date">05.07.2021</span>
-            </div>
-            <div class="post-right">
-              <div class="count">
-                <img src="./assets/icons/comment.svg" alt="comment">
-                <span class="count-value">23</span>
-              </div>
-              <div class="count">
-                <img src="./assets/icons/like.svg" alt="like">
-                <span class="count-value">91,4 тыс</span>
+              <div class="post-right">
+                <div class="count">
+                  <img src="./assets/icons/comment.svg" alt="comment">
+                  <span class="count-value">23</span>
+                </div>
+                <div class="count">
+                  <img src="./assets/icons/like.svg" alt="like">
+                  <span class="count-value">91,4 тыс</span>
+                </div>
               </div>
             </div>
-          </div>
-          <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
-        </a>
-        <a href="#" class="main-post">
-          <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
-          <div class="info-line">
-            <div class="post-left">
-              <span class="post-category">Луки - неделька</span>
-              <span class="post-date">05.07.2021</span>
-            </div>
-            <div class="post-right">
-              <div class="count">
-                <img src="./assets/icons/comment.svg" alt="comment">
-                <span class="count-value">23</span>
+            <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
+          </a>
+          <a href="#" class="main-post">
+            <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
+            <div class="info-line">
+              <div class="post-left">
+                <span class="post-category">Луки - неделька</span>
+                <span class="post-date">05.07.2021</span>
               </div>
-              <div class="count">
-                <img src="./assets/icons/like.svg" alt="like">
-                <span class="count-value">91,4 тыс</span>
-              </div>
-            </div>
-          </div>
-          <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
-        </a>
-        <a href="#" class="main-post">
-          <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
-          <div class="info-line">
-            <div class="post-left">
-              <span class="post-category">Луки - неделька</span>
-              <span class="post-date">05.07.2021</span>
-            </div>
-            <div class="post-right">
-              <div class="count">
-                <img src="./assets/icons/comment.svg" alt="comment">
-                <span class="count-value">23</span>
-              </div>
-              <div class="count">
-                <img src="./assets/icons/like.svg" alt="like">
-                <span class="count-value">91,4 тыс</span>
+              <div class="post-right">
+                <div class="count">
+                  <img src="./assets/icons/comment.svg" alt="comment">
+                  <span class="count-value">23</span>
+                </div>
+                <div class="count">
+                  <img src="./assets/icons/like.svg" alt="like">
+                  <span class="count-value">91,4 тыс</span>
+                </div>
               </div>
             </div>
-          </div>
-          <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
-        </a>
-        <a href="#" class="main-post">
-          <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
-          <div class="info-line">
-            <div class="post-left">
-              <span class="post-category">Луки - неделька</span>
-              <span class="post-date">05.07.2021</span>
-            </div>
-            <div class="post-right">
-              <div class="count">
-                <img src="./assets/icons/comment.svg" alt="comment">
-                <span class="count-value">23</span>
+            <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
+          </a>
+          <a href="#" class="main-post">
+            <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
+            <div class="info-line">
+              <div class="post-left">
+                <span class="post-category">Луки - неделька</span>
+                <span class="post-date">05.07.2021</span>
               </div>
-              <div class="count">
-                <img src="./assets/icons/like.svg" alt="like">
-                <span class="count-value">91,4 тыс</span>
-              </div>
-            </div>
-          </div>
-          <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
-        </a>
-        <a href="#" class="main-post">
-          <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
-          <div class="info-line">
-            <div class="post-left">
-              <span class="post-category">Луки - неделька</span>
-              <span class="post-date">05.07.2021</span>
-            </div>
-            <div class="post-right">
-              <div class="count">
-                <img src="./assets/icons/comment.svg" alt="comment">
-                <span class="count-value">23</span>
-              </div>
-              <div class="count">
-                <img src="./assets/icons/like.svg" alt="like">
-                <span class="count-value">91,4 тыс</span>
+              <div class="post-right">
+                <div class="count">
+                  <img src="./assets/icons/comment.svg" alt="comment">
+                  <span class="count-value">23</span>
+                </div>
+                <div class="count">
+                  <img src="./assets/icons/like.svg" alt="like">
+                  <span class="count-value">91,4 тыс</span>
+                </div>
               </div>
             </div>
-          </div>
-          <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
-        </a>
-        <a href="#" class="main-post">
-          <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
-          <div class="info-line">
-            <div class="post-left">
-              <span class="post-category">Луки - неделька</span>
-              <span class="post-date">05.07.2021</span>
-            </div>
-            <div class="post-right">
-              <div class="count">
-                <img src="./assets/icons/comment.svg" alt="comment">
-                <span class="count-value">23</span>
+            <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
+          </a>
+          <a href="#" class="main-post">
+            <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
+            <div class="info-line">
+              <div class="post-left">
+                <span class="post-category">Луки - неделька</span>
+                <span class="post-date">05.07.2021</span>
               </div>
-              <div class="count">
-                <img src="./assets/icons/like.svg" alt="like">
-                <span class="count-value">91,4 тыс</span>
-              </div>
-            </div>
-          </div>
-          <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
-        </a>
-        <a href="#" class="main-post">
-          <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
-          <div class="info-line">
-            <div class="post-left">
-              <span class="post-category">Луки - неделька</span>
-              <span class="post-date">05.07.2021</span>
-            </div>
-            <div class="post-right">
-              <div class="count">
-                <img src="./assets/icons/comment.svg" alt="comment">
-                <span class="count-value">23</span>
-              </div>
-              <div class="count">
-                <img src="./assets/icons/like.svg" alt="like">
-                <span class="count-value">91,4 тыс</span>
+              <div class="post-right">
+                <div class="count">
+                  <img src="./assets/icons/comment.svg" alt="comment">
+                  <span class="count-value">23</span>
+                </div>
+                <div class="count">
+                  <img src="./assets/icons/like.svg" alt="like">
+                  <span class="count-value">91,4 тыс</span>
+                </div>
               </div>
             </div>
-          </div>
-          <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
-        </a>
+            <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
+          </a>
+          <a href="#" class="main-post">
+            <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
+            <div class="info-line">
+              <div class="post-left">
+                <span class="post-category">Луки - неделька</span>
+                <span class="post-date">05.07.2021</span>
+              </div>
+              <div class="post-right">
+                <div class="count">
+                  <img src="./assets/icons/comment.svg" alt="comment">
+                  <span class="count-value">23</span>
+                </div>
+                <div class="count">
+                  <img src="./assets/icons/like.svg" alt="like">
+                  <span class="count-value">91,4 тыс</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
+          </a>
+          <a href="#" class="main-post">
+            <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
+            <div class="info-line">
+              <div class="post-left">
+                <span class="post-category">Луки - неделька</span>
+                <span class="post-date">05.07.2021</span>
+              </div>
+              <div class="post-right">
+                <div class="count">
+                  <img src="./assets/icons/comment.svg" alt="comment">
+                  <span class="count-value">23</span>
+                </div>
+                <div class="count">
+                  <img src="./assets/icons/like.svg" alt="like">
+                  <span class="count-value">91,4 тыс</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
+          </a>
+          <a href="#" class="main-post">
+            <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
+            <div class="info-line">
+              <div class="post-left">
+                <span class="post-category">Луки - неделька</span>
+                <span class="post-date">05.07.2021</span>
+              </div>
+              <div class="post-right">
+                <div class="count">
+                  <img src="./assets/icons/comment.svg" alt="comment">
+                  <span class="count-value">23</span>
+                </div>
+                <div class="count">
+                  <img src="./assets/icons/like.svg" alt="like">
+                  <span class="count-value">91,4 тыс</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
+          </a>
+          <a href="#" class="main-post">
+            <img class="post-image" src="./assets/main-post-image.jpg" alt="post-image">
+            <div class="info-line">
+              <div class="post-left">
+                <span class="post-category">Луки - неделька</span>
+                <span class="post-date">05.07.2021</span>
+              </div>
+              <div class="post-right">
+                <div class="count">
+                  <img src="./assets/icons/comment.svg" alt="comment">
+                  <span class="count-value">23</span>
+                </div>
+                <div class="count">
+                  <img src="./assets/icons/like.svg" alt="like">
+                  <span class="count-value">91,4 тыс</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="post-title">5 образов в тренде: <br>кружево</h3>
+          </a>
+        </div>
+        <div class="button-wrap">
+          <button class="brand-btn shadow">Смотреть все посты</button>
+        </div>
       </div>
-      <div class="button-wrap">
-        <button class="brand-btn shadow">Смотреть все посты</button>
+    </section>
+    <section class="promos">
+      <div class="container">
+        <div class="section-content">
+          <a href="#" class="promo-item">
+            <div class="text-wrap">
+              <span class="promo-name">Акции</span>
+              <span class="promo-link">Перейти</span>
+            </div>
+            <div class="image-wrap">
+              <img src="./assets/icons/promo1.svg" alt="promo">
+            </div>
+          </a>
+          <a href="#" class="promo-item">
+            <div class="text-wrap">
+              <span class="promo-name">Платья</span>
+              <span class="promo-link">Перейти</span>
+            </div>
+            <div class="image-wrap">
+              <img src="./assets/icons/promo2.svg" alt="promo">
+            </div>
+          </a>
+          <a href="#" class="promo-item">
+            <div class="text-wrap">
+              <span class="promo-name">Тренды</span>
+              <span class="promo-link">Перейти</span>
+            </div>
+            <div class="image-wrap">
+              <img src="./assets/icons/promo3.svg" alt="promo">
+            </div>
+          </a>
+          <a href="#" class="promo-item">
+            <div class="text-wrap">
+              <span class="promo-name">Лук дня</span>
+              <span class="promo-link">Перейти</span>
+            </div>
+            <div class="image-wrap">
+              <img src="./assets/icons/promo4.svg" alt="promo">
+            </div>
+          </a>
+          <a href="#" class="promo-item">
+            <div class="text-wrap">
+              <span class="promo-name">Zara</span>
+              <span class="promo-link">Перейти</span>
+            </div>
+            <div class="image-wrap">
+              <img src="./assets/icons/promo5.svg" alt="promo">
+            </div>
+          </a>
+          <a href="#" class="promo-item">
+            <div class="text-wrap">
+              <span class="promo-name">Акции</span>
+              <span class="promo-link">Перейти</span>
+            </div>
+            <div class="image-wrap">
+              <img src="./assets/icons/promo1.svg" alt="promo">
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="promos">
-    <div class="container">
-      <div class="section-content">
-        <a href="#" class="promo-item">
-          <div class="text-wrap">
-            <span class="promo-name">Акции</span>
-            <span class="promo-link">Перейти</span>
-          </div>
-          <div class="image-wrap">
-            <img src="./assets/icons/promo1.svg" alt="promo">
-          </div>
-        </a>
-        <a href="#" class="promo-item">
-          <div class="text-wrap">
-            <span class="promo-name">Платья</span>
-            <span class="promo-link">Перейти</span>
-          </div>
-          <div class="image-wrap">
-            <img src="./assets/icons/promo2.svg" alt="promo">
-          </div>
-        </a>
-        <a href="#" class="promo-item">
-          <div class="text-wrap">
-            <span class="promo-name">Тренды</span>
-            <span class="promo-link">Перейти</span>
-          </div>
-          <div class="image-wrap">
-            <img src="./assets/icons/promo3.svg" alt="promo">
-          </div>
-        </a>
-        <a href="#" class="promo-item">
-          <div class="text-wrap">
-            <span class="promo-name">Лук дня</span>
-            <span class="promo-link">Перейти</span>
-          </div>
-          <div class="image-wrap">
-            <img src="./assets/icons/promo4.svg" alt="promo">
-          </div>
-        </a>
-        <a href="#" class="promo-item">
-          <div class="text-wrap">
-            <span class="promo-name">Zara</span>
-            <span class="promo-link">Перейти</span>
-          </div>
-          <div class="image-wrap">
-            <img src="./assets/icons/promo5.svg" alt="promo">
-          </div>
-        </a>
-        <a href="#" class="promo-item">
-          <div class="text-wrap">
-            <span class="promo-name">Акции</span>
-            <span class="promo-link">Перейти</span>
-          </div>
-          <div class="image-wrap">
-            <img src="./assets/icons/promo1.svg" alt="promo">
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="categories">
-    <div class="container">
-      <h2 class="section-title">Категории постов</h2>
-      <div class="section-content">
-        <div class="categories-list">
-          <div class="posts-category typical-post">
-            <div class="square-post">
-              <img class="category-image" src="./assets/post-category.jpg" alt="category">
-            </div>
-            <div class="post-info">
-              <div class="category-icon-wrap">
-                <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
+    </section>
+    <section class="categories">
+      <div class="container">
+        <h2 class="section-title">Категории постов</h2>
+        <div class="section-content">
+          <div class="categories-list">
+            <div class="posts-category typical-post">
+              <div class="square-image">
+                <img class="category-image" src="./assets/post-category.jpg" alt="category">
               </div>
-              <h3 class="post-title">Хочу vs <br> могу</h3>
-              <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
-              <a class="post-link-text" href="#">Перейти в подборку</a>
+              <div class="post-info">
+                <div class="category-icon-wrap">
+                  <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
+                </div>
+                <h3 class="post-title">Хочу vs <br> могу</h3>
+                <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
+                <a class="post-link-text" href="#">Перейти в подборку</a>
+              </div>
+            </div>
+            <div class="posts-category typical-post">
+              <div class="square-image">
+                <img class="category-image" src="./assets/post-category.jpg" alt="category">
+              </div>
+              <div class="post-info">
+                <div class="category-icon-wrap">
+                  <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
+                </div>
+                <h3 class="post-title">Хочу vs <br> могу</h3>
+                <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
+                <a class="post-link-text" href="#">Перейти в подборку</a>
+              </div>
+            </div>
+            <div class="posts-category typical-post">
+              <div class="square-image">
+                <img class="category-image" src="./assets/post-category.jpg" alt="category">
+              </div>
+              <div class="post-info">
+                <div class="category-icon-wrap">
+                  <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
+                </div>
+                <h3 class="post-title">Хочу vs <br> могу</h3>
+                <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
+                <a class="post-link-text" href="#">Перейти в подборку</a>
+              </div>
+            </div>
+            <div class="posts-category typical-post">
+              <div class="square-image">
+                <img class="category-image" src="./assets/post-category.jpg" alt="category">
+              </div>
+              <div class="post-info">
+                <div class="category-icon-wrap">
+                  <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
+                </div>
+                <h3 class="post-title">Хочу vs <br> могу</h3>
+                <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
+                <a class="post-link-text" href="#">Перейти в подборку</a>
+              </div>
+            </div>
+            <div class="posts-category typical-post">
+              <div class="square-image">
+                <img class="category-image" src="./assets/post-category.jpg" alt="category">
+              </div>
+              <div class="post-info">
+                <div class="category-icon-wrap">
+                  <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
+                </div>
+                <h3 class="post-title">Хочу vs <br> могу</h3>
+                <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
+                <a class="post-link-text" href="#">Перейти в подборку</a>
+              </div>
+            </div>
+            <div class="posts-category typical-post">
+              <div class="square-image">
+                <img class="category-image" src="./assets/post-category.jpg" alt="category">
+              </div>
+              <div class="post-info">
+                <div class="category-icon-wrap">
+                  <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
+                </div>
+                <h3 class="post-title">Хочу vs <br> могу</h3>
+                <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
+                <a class="post-link-text" href="#">Перейти в подборку</a>
+              </div>
             </div>
           </div>
-          <div class="posts-category typical-post">
-            <div class="square-post">
-              <img class="category-image" src="./assets/post-category.jpg" alt="category">
-            </div>
-            <div class="post-info">
-              <div class="category-icon-wrap">
-                <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
+          <div class="popular-posts-block-wrap">
+            <div class="popular-posts-block">
+              <h3 class="popular-posts-title">
+                Популярные стати
+              </h3>
+              <div class="posts">
+                <div class="popular-post">
+                  <img class="post-image" src="./assets/popular-article.jpg" alt="article">
+                  <h3 class="post-title">Наряды для праздника</h3>
+                  <a href="#" class="post-link">Читать</a>
+                </div>
+                <div class="popular-post">
+                  <img class="post-image" src="./assets/popular-article.jpg" alt="article">
+                  <h3 class="post-title">Наряды для праздника</h3>
+                  <a href="#" class="post-link">Читать</a>
+                </div>
+                <div class="popular-post">
+                  <img class="post-image" src="./assets/popular-article.jpg" alt="article">
+                  <h3 class="post-title">Наряды для праздника</h3>
+                  <a href="#" class="post-link">Читать</a>
+                </div>
               </div>
-              <h3 class="post-title">Хочу vs <br> могу</h3>
-              <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
-              <a class="post-link-text" href="#">Перейти в подборку</a>
             </div>
-          </div>
-          <div class="posts-category typical-post">
-            <div class="square-post">
-              <img class="category-image" src="./assets/post-category.jpg" alt="category">
-            </div>
-            <div class="post-info">
-              <div class="category-icon-wrap">
-                <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
+            <div class="hashtags">
+              <h3 class="title">Ищи свой #</h3>
+              <div class="hashtags-list">
+                <a href="#" class="hashtag">#aliexpress</a>
+                <a href="#" class="hashtag">#капсула</a>
+                <a href="#" class="hashtag">#одежда</a>
+                <a href="#" class="hashtag">#люкс</a>
+                <a href="#" class="hashtag">#топ</a>
+                <a href="#" class="hashtag">#тренды</a>
+                <a href="#" class="hashtag">#образ</a>
+                <a href="#" class="hashtag">#одежда</a>
+                <a href="#" class="hashtag">#длядома</a>
+                <a href="#" class="hashtag">#обувь</a>
+                <a href="#" class="hashtag">#платья</a>
+                <a href="#" class="hashtag">#товары</a>
+                <a href="#" class="hashtag">#какублогера</a>
+                <a href="#" class="hashtag">#аксессуары</a>
+                <a href="#" class="hashtag">#aliexpress</a>
+                <a href="#" class="hashtag">#капсула</a>
+                <a href="#" class="hashtag">#одежда</a>
+                <a href="#" class="hashtag">#товары</a>
+                <a href="#" class="hashtag">#какублогера</a>
+                <a href="#" class="hashtag">#длядома</a>
+                <a href="#" class="hashtag">#обувь</a>
               </div>
-              <h3 class="post-title">Хочу vs <br> могу</h3>
-              <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
-              <a class="post-link-text" href="#">Перейти в подборку</a>
-            </div>
-          </div>
-          <div class="posts-category typical-post">
-            <div class="square-post">
-              <img class="category-image" src="./assets/post-category.jpg" alt="category">
-            </div>
-            <div class="post-info">
-              <div class="category-icon-wrap">
-                <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
-              </div>
-              <h3 class="post-title">Хочу vs <br> могу</h3>
-              <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
-              <a class="post-link-text" href="#">Перейти в подборку</a>
-            </div>
-          </div>
-          <div class="posts-category typical-post">
-            <div class="square-post-image-wrap">
-              <img class="category-image" src="./assets/post-category.jpg" alt="category">
-            </div>
-            <div class="post-info">
-              <div class="category-icon-wrap">
-                <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
-              </div>
-              <h3 class="post-title">Хочу vs <br> могу</h3>
-              <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
-              <a class="post-link-text" href="#">Перейти в подборку</a>
-            </div>
-          </div>
-          <div class="posts-category typical-post">
-            <div class="square-post">
-              <img class="category-image" src="./assets/post-category.jpg" alt="category">
-            </div>
-            <div class="post-info">
-              <div class="category-icon-wrap">
-                <img class="category-icon" src="./assets/icons/post-category-icon.svg" alt="icon">
-              </div>
-              <h3 class="post-title">Хочу vs <br> могу</h3>
-              <p class="post-description">Подборка трендовых вещей на осень и зиму как в популярных брендах, только с АлиЭкспресс</p>
-              <a class="post-link-text" href="#">Перейти в подборку</a>
             </div>
           </div>
         </div>
-        <div class="popular-posts-block-wrap">
-          <div class="popular-posts-block">
-            <h3 class="popular-posts-title">
-              Популярные стати
-            </h3>
-            <div class="posts">
-              <div class="popular-post">
-                <img class="post-image" src="./assets/popular-article.jpg" alt="article">
-                <h3 class="post-title">Наряды для праздника</h3>
-                <a href="#" class="post-link">Читать</a>
-              </div>
-              <div class="popular-post">
-                <img class="post-image" src="./assets/popular-article.jpg" alt="article">
-                <h3 class="post-title">Наряды для праздника</h3>
-                <a href="#" class="post-link">Читать</a>
-              </div>
-              <div class="popular-post">
-                <img class="post-image" src="./assets/popular-article.jpg" alt="article">
-                <h3 class="post-title">Наряды для праздника</h3>
-                <a href="#" class="post-link">Читать</a>
-              </div>
-            </div>
-          </div>
-          <div class="hashtags">
-            <h3 class="title">Ищи свой #</h3>
-            <div class="hashtags-list">
-              <a href="#" class="hashtag">#aliexpress</a>
-              <a href="#" class="hashtag">#капсула</a>
-              <a href="#" class="hashtag">#одежда</a>
-              <a href="#" class="hashtag">#люкс</a>
-              <a href="#" class="hashtag">#топ</a>
-              <a href="#" class="hashtag">#тренды</a>
-              <a href="#" class="hashtag">#образ</a>
-              <a href="#" class="hashtag">#одежда</a>
-              <a href="#" class="hashtag">#длядома</a>
-              <a href="#" class="hashtag">#обувь</a>
-              <a href="#" class="hashtag">#платья</a>
-              <a href="#" class="hashtag">#товары</a>
-              <a href="#" class="hashtag">#какублогера</a>
-              <a href="#" class="hashtag">#аксессуары</a>
-              <a href="#" class="hashtag">#aliexpress</a>
-              <a href="#" class="hashtag">#капсула</a>
-              <a href="#" class="hashtag">#одежда</a>
-              <a href="#" class="hashtag">#товары</a>
-              <a href="#" class="hashtag">#какублогера</a>
-              <a href="#" class="hashtag">#длядома</a>
-              <a href="#" class="hashtag">#обувь</a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <div class="container">
-    <hr class="divider">
-  </div>
-  <section class="category-extra">
+    </section>
     <div class="container">
-      <h2 class="section-title">Луки неделька</h2>
-      <div class="section-content">
-        <div class="large-post-wrap">
-          <div class="large-post typical-post">
-            <div class="square-image">
-              <img class="post-image" src="./assets/post-image.jpg" alt="post-image">
-            </div>
-            <div class="post-info">
-              <h3 class="post-title">Зимняя обувь с алиэкспресс</h3>
-              <div class="post-description-wrap">
-                <p class="post-description">Распродажа медленно, но верно подходит к концу - завтра в 11:00 по Москве скидки уже закончатся</p>
-                <a href="#" class="post-link">
-                  <span class="post-link-text">Перейти</span>
-                  <button class="link-icon-button">
-                    <img src="assets/icons/arrow-next.svg" alt="arrow" class="link-icon">
-                  </button>
-                </a>
+      <hr class="divider">
+    </div>
+    <section class="category-extra">
+      <div class="container">
+        <h2 class="section-title">Луки неделька</h2>
+        <div class="section-content">
+          <div class="large-post-wrap">
+            <div class="large-post typical-post">
+              <div class="square-image">
+                <img class="post-image" src="./assets/post-image.jpg" alt="post-image">
               </div>
-              <hr class="divider">
-              <div class="counts">
-                <div class="count-left">
-                  <div class="counter">
-                    <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
-                    <span class="counter-value up">314 просмотров</span>
+              <div class="post-info">
+                <h3 class="post-title">Зимняя обувь с алиэкспресс</h3>
+                <div class="post-description-wrap">
+                  <p class="post-description">Распродажа медленно, но верно подходит к концу - завтра в 11:00 по Москве скидки уже закончатся</p>
+                  <a href="#" class="post-link">
+                    <span class="post-link-text">Перейти</span>
+                    <button class="link-icon-button">
+                      <img src="assets/icons/arrow-next.svg" alt="arrow" class="link-icon">
+                    </button>
+                  </a>
+                </div>
+                <hr class="divider">
+                <div class="counts">
+                  <div class="count-left">
+                    <div class="counter">
+                      <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
+                      <span class="counter-value up">314 просмотров</span>
+                    </div>
+                  </div>
+                  <div class="count-right">
+                    <div class="counter">
+                      <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
+                      <span class="counter-value">23 комментария</span>
+                    </div>
+                    <div class="counter">
+                      <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
+                      <span class="counter-value">91,4 тыс</span>
+                    </div>
                   </div>
                 </div>
-                <div class="count-right">
+              </div>
+            </div>
+          </div>
+          <div class="other-posts">
+            <div class="category-small-post typical-post">
+              <img src="./assets/other-post-image.jpg" alt="other-post">
+              <div class="post-info">
+                <div class="text-info-wrap">
+                  <h3 class="post-title">Хочу vs могу</h3>
+                  <p class="post-description">Подборка трендовых вещей на Осень</p>
+                  <a href="#" class="post-link-text">Перейти</a>
+                </div>
+                <hr class="divider">
+                <div class="counters">
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
+                    <span class="counter-value up brand">314</span>
+                  </div>
                   <div class="counter">
                     <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
-                    <span class="counter-value">23 комментария</span>
+                    <span class="counter-value">23</span>
+                  </div>
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
+                    <span class="counter-value">91,4 тыс</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-small-post typical-post">
+              <img src="./assets/other-post-image.jpg" alt="other-post">
+              <div class="post-info">
+                <div class="text-info-wrap">
+                  <h3 class="post-title">Хочу vs могу</h3>
+                  <p class="post-description">Подборка трендовых вещей на Осень</p>
+                  <a href="#" class="post-link-text">Перейти</a>
+                </div>
+                <hr class="divider">
+                <div class="counters">
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
+                    <span class="counter-value up brand">314</span>
+                  </div>
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
+                    <span class="counter-value">23</span>
+                  </div>
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
+                    <span class="counter-value">91,4 тыс</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-small-post typical-post">
+              <img src="./assets/other-post-image.jpg" alt="other-post">
+              <div class="post-info">
+                <div class="text-info-wrap">
+                  <h3 class="post-title">Хочу vs могу</h3>
+                  <p class="post-description">Подборка трендовых вещей на Осень</p>
+                  <a href="#" class="post-link-text">Перейти</a>
+                </div>
+                <hr class="divider">
+                <div class="counters">
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
+                    <span class="counter-value up brand">314</span>
+                  </div>
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
+                    <span class="counter-value">23</span>
+                  </div>
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
+                    <span class="counter-value">91,4 тыс</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-small-post typical-post">
+              <img src="./assets/other-post-image.jpg" alt="other-post">
+              <div class="post-info">
+                <div class="text-info-wrap">
+                  <h3 class="post-title">Хочу vs могу</h3>
+                  <p class="post-description">Подборка трендовых вещей на Осень</p>
+                  <a href="#" class="post-link-text">Перейти</a>
+                </div>
+                <hr class="divider">
+                <div class="counters">
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
+                    <span class="counter-value up brand">314</span>
+                  </div>
+                  <div class="counter">
+                    <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
+                    <span class="counter-value">23</span>
                   </div>
                   <div class="counter">
                     <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
@@ -470,234 +716,135 @@
             </div>
           </div>
         </div>
-        <div class="other-posts">
-          <div class="category-small-post typical-post">
-            <img src="./assets/other-post-image.jpg" alt="other-post">
-            <div class="post-info">
-              <div class="text-info-wrap">
-                <h3 class="post-title">Хочу vs могу</h3>
-                <p class="post-description">Подборка трендовых вещей на Осень</p>
-                <a href="#" class="post-link-text">Перейти</a>
-              </div>
-              <hr class="divider">
-              <div class="counters">
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
-                  <span class="counter-value up brand">314</span>
-                </div>
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
-                  <span class="counter-value">23</span>
-                </div>
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
-                  <span class="counter-value">91,4 тыс</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="category-small-post typical-post">
-            <img src="./assets/other-post-image.jpg" alt="other-post">
-            <div class="post-info">
-              <div class="text-info-wrap">
-                <h3 class="post-title">Хочу vs могу</h3>
-                <p class="post-description">Подборка трендовых вещей на Осень</p>
-                <a href="#" class="post-link-text">Перейти</a>
-              </div>
-              <hr class="divider">
-              <div class="counters">
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
-                  <span class="counter-value up brand">314</span>
-                </div>
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
-                  <span class="counter-value">23</span>
-                </div>
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
-                  <span class="counter-value">91,4 тыс</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="category-small-post typical-post">
-            <img src="./assets/other-post-image.jpg" alt="other-post">
-            <div class="post-info">
-              <div class="text-info-wrap">
-                <h3 class="post-title">Хочу vs могу</h3>
-                <p class="post-description">Подборка трендовых вещей на Осень</p>
-                <a href="#" class="post-link-text">Перейти</a>
-              </div>
-              <hr class="divider">
-              <div class="counters">
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
-                  <span class="counter-value up brand">314</span>
-                </div>
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
-                  <span class="counter-value">23</span>
-                </div>
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
-                  <span class="counter-value">91,4 тыс</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="category-small-post typical-post">
-            <img src="./assets/other-post-image.jpg" alt="other-post">
-            <div class="post-info">
-              <div class="text-info-wrap">
-                <h3 class="post-title">Хочу vs могу</h3>
-                <p class="post-description">Подборка трендовых вещей на Осень</p>
-                <a href="#" class="post-link-text">Перейти</a>
-              </div>
-              <hr class="divider">
-              <div class="counters">
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
-                  <span class="counter-value up brand">314</span>
-                </div>
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
-                  <span class="counter-value">23</span>
-                </div>
-                <div class="counter">
-                  <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
-                  <span class="counter-value">91,4 тыс</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <div class="container">
-    <hr class="divider">
-  </div>
-  <section class="news">
+    </section>
     <div class="container">
-      <div class="section-content">
-        <div class="title-wrap">
-          <h2 class="section-title">Новости</h2>
-          <button class="brand-btn">Смотреть все новости</button>
-        </div>
-        <div class="news-gallery">
-          <div id="news" class="flicking-viewport">
-            <div class="flicking-camera">
-              <a href="#" class="news-item">
-                <div class="image-wrap">
-                  <div class="square-image">
-                    <img src="./assets/news-item.jpg" alt="news-item">
-                  </div>
-                  <div class="image-title-wrap">
-                    <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
-                  </div>
-                </div>
-                <div class="info-wrap">
-                  <span class="news-date">12.10.2021</span>
-                  <h4 class="news-title">Более 40 стильных сумок</h4>
-                </div>
-              </a>
-              <a href="#" class="news-item">
-                <div class="image-wrap">
-                  <div class="square-image">
-                    <img src="./assets/news-item.jpg" alt="news-item">
-                  </div>
-                  <div class="image-title-wrap">
-                    <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
-                  </div>
-                </div>
-                <div class="info-wrap">
-                  <span class="news-date">12.10.2021</span>
-                  <h4 class="news-title">Более 40 стильных сумок</h4>
-                </div>
-              </a>
-              <a href="#" class="news-item">
-                <div class="image-wrap">
-                  <div class="square-image">
-                    <img src="./assets/news-item.jpg" alt="news-item">
-                  </div>
-                  <div class="image-title-wrap">
-                    <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
-                  </div>
-                </div>
-                <div class="info-wrap">
-                  <span class="news-date">12.10.2021</span>
-                  <h4 class="news-title">Более 40 стильных сумок</h4>
-                </div>
-              </a>
-              <a href="#" class="news-item">
-                <div class="image-wrap">
-                  <div class="square-image">
-                    <img src="./assets/news-item.jpg" alt="news-item">
-                  </div>
-                  <div class="image-title-wrap">
-                    <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
-                  </div>
-                </div>
-                <div class="info-wrap">
-                  <span class="news-date">12.10.2021</span>
-                  <h4 class="news-title">Более 40 стильных сумок</h4>
-                </div>
-              </a>
-              <a href="#" class="news-item">
-                <div class="image-wrap">
-                  <div class="square-image">
-                    <img src="./assets/news-item.jpg" alt="news-item">
-                  </div>
-                  <div class="image-title-wrap">
-                    <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
-                  </div>
-                </div>
-                <div class="info-wrap">
-                  <span class="news-date">12.10.2021</span>
-                  <h4 class="news-title">Более 40 стильных сумок</h4>
-                </div>
-              </a>
-              <a href="#" class="news-item">
-                <div class="image-wrap">
-                  <div class="square-image">
-                    <img src="./assets/news-item.jpg" alt="news-item">
-                  </div>
-                  <div class="image-title-wrap">
-                    <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
-                  </div>
-                </div>
-                <div class="info-wrap">
-                  <span class="news-date">12.10.2021</span>
-                  <h4 class="news-title">Более 40 стильных сумок</h4>
-                </div>
-              </a>
-              <a href="#" class="news-item">
-                <div class="image-wrap">
-                  <div class="square-image">
-                    <img src="./assets/news-item.jpg" alt="news-item">
-                  </div>
-                  <div class="image-title-wrap">
-                    <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
-                  </div>
-                </div>
-                <div class="info-wrap">
-                  <span class="news-date">12.10.2021</span>
-                  <h4 class="news-title">Более 40 стильных сумок</h4>
-                </div>
-              </a>
-            </div>
+      <hr class="divider">
+    </div>
+    <section class="news">
+      <div class="container">
+        <div class="section-content">
+          <div class="title-wrap">
+            <h2 class="section-title">Новости</h2>
+            <button class="brand-btn all-news">Смотреть все новости</button>
           </div>
-          <button class="link-icon-button arrow flicking-arrow-prev">
-            <img src="./assets/icons/arrow-prev.svg" alt="arrow">
-          </button>
-          <button class="link-icon-button arrow flicking-arrow-next">
-            <img src="./assets/icons/arrow-next.svg" alt="arrow">
-          </button>
+          <div class="news-gallery">
+            <div id="news" class="flicking-viewport">
+              <div class="flicking-camera">
+                <a href="#" class="news-item">
+                  <div class="image-wrap">
+                    <div class="square-image">
+                      <img src="./assets/news-item.jpg" alt="news-item">
+                    </div>
+                    <div class="image-title-wrap">
+                      <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <span class="news-date">12.10.2021</span>
+                    <h4 class="news-title">Более 40 стильных сумок</h4>
+                  </div>
+                </a>
+                <a href="#" class="news-item">
+                  <div class="image-wrap">
+                    <div class="square-image">
+                      <img src="./assets/news-item.jpg" alt="news-item">
+                    </div>
+                    <div class="image-title-wrap">
+                      <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <span class="news-date">12.10.2021</span>
+                    <h4 class="news-title">Более 40 стильных сумок</h4>
+                  </div>
+                </a>
+                <a href="#" class="news-item">
+                  <div class="image-wrap">
+                    <div class="square-image">
+                      <img src="./assets/news-item.jpg" alt="news-item">
+                    </div>
+                    <div class="image-title-wrap">
+                      <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <span class="news-date">12.10.2021</span>
+                    <h4 class="news-title">Более 40 стильных сумок</h4>
+                  </div>
+                </a>
+                <a href="#" class="news-item">
+                  <div class="image-wrap">
+                    <div class="square-image">
+                      <img src="./assets/news-item.jpg" alt="news-item">
+                    </div>
+                    <div class="image-title-wrap">
+                      <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <span class="news-date">12.10.2021</span>
+                    <h4 class="news-title">Более 40 стильных сумок</h4>
+                  </div>
+                </a>
+                <a href="#" class="news-item">
+                  <div class="image-wrap">
+                    <div class="square-image">
+                      <img src="./assets/news-item.jpg" alt="news-item">
+                    </div>
+                    <div class="image-title-wrap">
+                      <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <span class="news-date">12.10.2021</span>
+                    <h4 class="news-title">Более 40 стильных сумок</h4>
+                  </div>
+                </a>
+                <a href="#" class="news-item">
+                  <div class="image-wrap">
+                    <div class="square-image">
+                      <img src="./assets/news-item.jpg" alt="news-item">
+                    </div>
+                    <div class="image-title-wrap">
+                      <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <span class="news-date">12.10.2021</span>
+                    <h4 class="news-title">Более 40 стильных сумок</h4>
+                  </div>
+                </a>
+                <a href="#" class="news-item">
+                  <div class="image-wrap">
+                    <div class="square-image">
+                      <img src="./assets/news-item.jpg" alt="news-item">
+                    </div>
+                    <div class="image-title-wrap">
+                      <h3 class="image-title">Осенняя обувь <br> <b>С Алиэкспресс</b></h3>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <span class="news-date">12.10.2021</span>
+                    <h4 class="news-title">Более 40 стильных сумок</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <button class="link-icon-button arrow flicking-arrow-prev">
+              <img src="./assets/icons/arrow-prev.svg" alt="arrow">
+            </button>
+            <button class="link-icon-button arrow flicking-arrow-next">
+              <img src="./assets/icons/arrow-next.svg" alt="arrow">
+            </button>
+          </div>
+          <div class="all-news-mobile">
+            <button class="brand-btn">Смотреть все новости</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -763,5 +910,6 @@
       }))
     })
   </script>
+  <script src="./scripts/menu.js"></script>
 </body>
 </html>

@@ -7,10 +7,19 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: $main-gap;
+    @media screen and (max-width: 1460px) {
+      grid-template-columns: 1fr;
+    }
     .categories-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: $main-gap;
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+      .category-image {
+        display: flex;
+      }
     }
   }
 }

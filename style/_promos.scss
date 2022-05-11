@@ -9,6 +9,16 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: $main-gap;
+    @media screen and (max-width: 1460px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
     .promo-item {
       text-decoration: none;
       display: flex;

@@ -7,6 +7,9 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: $main-gap;
+    @media screen and (max-width: 1460px) {
+      grid-template-columns: 1fr;
+    }
     .lifehacks-posts {
       .action-wrap {
         width: 100%;
@@ -28,12 +31,19 @@
         .post-large-title {
           margin-bottom: 16px;
           color: $color-black;
+          @media screen and (max-width: 576px) {
+            font-size: 20px;
+          }
         }
         .post-text-info {
           display: flex;
           align-items: center;
           justify-content: space-between;
           margin-bottom: 16px;
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
           .post-date {
             font-weight: 500;
             font-size: 11px;
@@ -42,13 +52,24 @@
             letter-spacing: 0.16em;
             text-transform: uppercase;
             color: $color-secondary2;
+            @media screen and (max-width: 768px) {
+              margin-bottom: 12px;
+            }
           }
           .counts {
             display: flex;
             .counter {
               margin-right: 36px;
+              @media screen and (max-width: 576px) {
+                margin-right: 20px;
+              }
               &:last-child {
                 margin-right: 0;
+              }
+              .mob {
+                @media screen and (max-width: 576px) {
+                  display: none;
+                }
               }
             }
           }

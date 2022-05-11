@@ -25,6 +25,19 @@
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  @media screen and (max-width: 1460px) {
+    max-width: 960px;
+  }
+  @media screen and (max-width: 992px) {
+    max-width: 720px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 540px;
+  }
+  @media screen and (max-width: 576px) {
+    max-width: 100%;
+    padding: 0 16px;
+  }
 }
 
 body {
@@ -32,6 +45,10 @@ body {
   background-color: $color-white;
   font-family: 'Montserrat', sans-serif;
   color: $color-black;
+}
+
+main {
+  padding-top: 94px;
 }
 
 *, *::before, *::after {

@@ -19,20 +19,69 @@
             <img src="./assets/logo.svg" alt="logo">
           </a>
           <ul class="menu">
-            <li class="menu-item">
-              <a href="#" class="menu-item-link">AliExpress</a>
+            <li class="menu-item dropdown">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">AliExpress</span>
+              </a>
+              <div class="dropdown-block">
+                <ul class="links">
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Посты</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Хочу/Могу</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Базовый гардероб</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Луки-неделька</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Aliexpress для дома</a>
+                  </li>
+                </ul>
+                <div class="dropdown-posts">
+                  <a href="#" class="post-item">
+                    <div class="image-wrap square-image">
+                      <img src="./assets/current-post-image.jpg" alt="post-image">
+                    </div>
+                    <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+                  </a>
+                  <a href="#" class="post-item">
+                    <div class="image-wrap square-image">
+                      <img src="./assets/current-post-image.jpg" alt="post-image">
+                    </div>
+                    <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+                  </a>
+                  <a href="#" class="post-item">
+                    <div class="image-wrap square-image">
+                      <img src="./assets/current-post-image.jpg" alt="post-image">
+                    </div>
+                    <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+                  </a>
+                </div>
+              </div>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Лайфхаки</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Лайфхаки</span>
+              </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Q&A</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Q&A</span>
+              </a>
             </li>
             <li class="menu-item active">
-              <a href="#" class="menu-item-link">Об авторе</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Об авторе</span>
+              </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Контакты</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Контакты</span>
+              </a>
             </li>
           </ul>
           <div class="social-networks">
@@ -45,6 +94,23 @@
             </a>
           </div>
         </div>
+        <div class="search-main-wrap">
+          <form class="search-wrap">
+            <label>
+              <input class="search-field" placeholder="Найти интересную тему.." type="text" />
+            </label>
+            <button type="submit" class="search-button">
+              <img src="./assets/icons/search.svg" alt="search">
+            </button>
+          </form>
+          <button class="menu-button">
+            <img src="./assets/icons/menu.svg" alt="menu">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-mobile">
+      <div class="container">
         <form class="search-wrap">
           <label>
             <input class="search-field" placeholder="Найти интересную тему.." type="text" />
@@ -53,139 +119,217 @@
             <img src="./assets/icons/search.svg" alt="search">
           </button>
         </form>
+        <div class="header-mobile-content">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">AliExpress</span>
+              </a>
+              <ul class="nested-menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Посты</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Хочу/Могу</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Базовый гардероб</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Луки-неделька</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Aliexpress для дома</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Лайфхаки</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Q&A</span>
+              </a>
+            </li>
+            <li class="menu-item active">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Об авторе</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Контакты</span>
+              </a>
+            </li>
+          </ul>
+          <div class="recent-posts">
+            <a href="#" class="post-item">
+              <div class="image-wrap square-image">
+                <img src="./assets/current-post-image.jpg" alt="post-image">
+              </div>
+              <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+            </a>
+            <a href="#" class="post-item">
+              <div class="image-wrap square-image">
+                <img src="./assets/current-post-image.jpg" alt="post-image">
+              </div>
+              <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+            </a>
+            <a href="#" class="post-item">
+              <div class="image-wrap square-image">
+                <img src="./assets/current-post-image.jpg" alt="post-image">
+              </div>
+              <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-  <section class="breadcrumbs">
-    <div class="container">
-      <div class="section-content">
-        <!-- span or a -->
-        <a class="breadcrumb" href="#">Главная</a>
-        <span class="breadcrumb active">Об авторе</span>
-      </div>
-    </div>
-  </section>
-  <section class="about">
-    <div class="container">
-      <div class="section-content">
-        <h2 class="section-title">Об авторе</h2>
-        <div class="author-content">
-          <img src="./assets/author.jpg" alt="author">
-          <div class="text">
-            <b class="head">Привет! <br>Меня зовут Аля, и уже 2 года я покупаю все свои вещи онлайн.</b>
-            <hr class="divider">
-            <p class="text-item">Если ты попала на этот сайт, значит тебя интересуют бюджетные качественные покупки с Aliexpress</p>
-            <p class="text-item">Не только на AliExpress, но и на многих других сайтах: Shein, Asos, Joom</p>
-            <p class="text-item">Мои параметры 82-67-87 и рост 165 см: это может быть важно при выборе размера. Какой размер я заказала на себя, я всегда указываю в обзоре товара</p>
-            <p class="text-item">Этот блог - мое небольшое хобби. Я не люблю переплачивать за вещи, надеюсь, и тебя смотивирую беречь свой бюджет.ный. Такие вещи отлично подойдут для повседневных, расслабленных образов. При выборе грубых ботинок стоит обратить внимание на подошву — у трендовых моделей она массивная, необычная. Для любителей быть на высоте — обувь на платформе.</p>
-          </div>
+  <main>
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="section-content">
+          <!-- span or a -->
+          <a class="breadcrumb" href="#">Главная</a>
+          <span class="breadcrumb active">Об авторе</span>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="read-more">
-    <div class="container">
-      <h2 class="section-title">Читайте также</h2>
-      <div class="section-content">
-        <div class="read-post typical-post">
-          <div class="square-image">
-            <img src="./assets/other-post-image.jpg" alt="image">
-          </div>
-          <div class="post-info">
-            <h4 class="post-title">Хочу vs могу</h4>
-            <a href="#" class="post-link-text">Перейти</a>
-            <hr class="divider">
-            <div class="counts">
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
-                <span class="counter-value up brand">314</span>
-              </div>
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
-                <span class="counter-value">23</span>
-              </div>
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
-                <span class="counter-value">91,4 тыс</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="read-post typical-post">
-          <div class="square-image">
-            <img src="./assets/other-post-image.jpg" alt="image">
-          </div>
-          <div class="post-info">
-            <h4 class="post-title">Хочу vs могу</h4>
-            <a href="#" class="post-link-text">Перейти</a>
-            <hr class="divider">
-            <div class="counts">
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
-                <span class="counter-value up brand">314</span>
-              </div>
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
-                <span class="counter-value">23</span>
-              </div>
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
-                <span class="counter-value">91,4 тыс</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="read-post typical-post">
-          <div class="square-image">
-            <img src="./assets/other-post-image.jpg" alt="image">
-          </div>
-          <div class="post-info">
-            <h4 class="post-title">Хочу vs могу</h4>
-            <a href="#" class="post-link-text">Перейти</a>
-            <hr class="divider">
-            <div class="counts">
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
-                <span class="counter-value up brand">314</span>
-              </div>
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
-                <span class="counter-value">23</span>
-              </div>
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
-                <span class="counter-value">91,4 тыс</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="read-post typical-post">
-          <div class="square-image">
-            <img src="./assets/other-post-image.jpg" alt="image">
-          </div>
-          <div class="post-info">
-            <h4 class="post-title">Хочу vs могу</h4>
-            <a href="#" class="post-link-text">Перейти</a>
-            <hr class="divider">
-            <div class="counts">
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
-                <span class="counter-value up brand">314</span>
-              </div>
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
-                <span class="counter-value">23</span>
-              </div>
-              <div class="counter">
-                <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
-                <span class="counter-value">91,4 тыс</span>
-              </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">Об авторе</h2>
+          <div class="author-content">
+            <img src="./assets/author.jpg" alt="author">
+            <div class="text">
+              <b class="head">Привет! <br>Меня зовут Аля, и уже 2 года я покупаю все свои вещи онлайн.</b>
+              <hr class="divider">
+              <p class="text-item">Если ты попала на этот сайт, значит тебя интересуют бюджетные качественные покупки с Aliexpress</p>
+              <p class="text-item">Не только на AliExpress, но и на многих других сайтах: Shein, Asos, Joom</p>
+              <p class="text-item">Мои параметры 82-67-87 и рост 165 см: это может быть важно при выборе размера. Какой размер я заказала на себя, я всегда указываю в обзоре товара</p>
+              <p class="text-item">Этот блог - мое небольшое хобби. Я не люблю переплачивать за вещи, надеюсь, и тебя смотивирую беречь свой бюджет.ный. Такие вещи отлично подойдут для повседневных, расслабленных образов. При выборе грубых ботинок стоит обратить внимание на подошву — у трендовых моделей она массивная, необычная. Для любителей быть на высоте — обувь на платформе.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="read-more">
+      <div class="container">
+        <h2 class="section-title">Читайте также</h2>
+        <div class="section-content">
+          <div class="read-post typical-post">
+            <div class="square-image">
+              <img src="./assets/other-post-image.jpg" alt="image">
+            </div>
+            <div class="post-info">
+              <h4 class="post-title">Хочу vs могу</h4>
+              <a href="#" class="post-link-text">Перейти</a>
+              <hr class="divider">
+              <div class="counts">
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
+                  <span class="counter-value up brand">314</span>
+                </div>
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
+                  <span class="counter-value">23</span>
+                </div>
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
+                  <span class="counter-value">91,4 тыс</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="read-post typical-post">
+            <div class="square-image">
+              <img src="./assets/other-post-image.jpg" alt="image">
+            </div>
+            <div class="post-info">
+              <h4 class="post-title">Хочу vs могу</h4>
+              <a href="#" class="post-link-text">Перейти</a>
+              <hr class="divider">
+              <div class="counts">
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
+                  <span class="counter-value up brand">314</span>
+                </div>
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
+                  <span class="counter-value">23</span>
+                </div>
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
+                  <span class="counter-value">91,4 тыс</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="read-post typical-post">
+            <div class="square-image">
+              <img src="./assets/other-post-image.jpg" alt="image">
+            </div>
+            <div class="post-info">
+              <h4 class="post-title">Хочу vs могу</h4>
+              <a href="#" class="post-link-text">Перейти</a>
+              <hr class="divider">
+              <div class="counts">
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
+                  <span class="counter-value up brand">314</span>
+                </div>
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
+                  <span class="counter-value">23</span>
+                </div>
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
+                  <span class="counter-value">91,4 тыс</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="read-post typical-post">
+            <div class="square-image">
+              <img src="./assets/other-post-image.jpg" alt="image">
+            </div>
+            <div class="post-info">
+              <h4 class="post-title">Хочу vs могу</h4>
+              <a href="#" class="post-link-text">Перейти</a>
+              <hr class="divider">
+              <div class="counts">
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/eye.svg" alt="icon">
+                  <span class="counter-value up brand">314</span>
+                </div>
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/comment.svg" alt="icon">
+                  <span class="counter-value">23</span>
+                </div>
+                <div class="counter">
+                  <img class="counter-image" src="./assets/icons/like.svg" alt="icon">
+                  <span class="counter-value">91,4 тыс</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -242,5 +386,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="./scripts/menu.js"></script>
 </body>
 </html>

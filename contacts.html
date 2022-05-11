@@ -19,20 +19,69 @@
             <img src="./assets/logo.svg" alt="logo">
           </a>
           <ul class="menu">
-            <li class="menu-item">
-              <a href="#" class="menu-item-link">AliExpress</a>
+            <li class="menu-item dropdown">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">AliExpress</span>
+              </a>
+              <div class="dropdown-block">
+                <ul class="links">
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Посты</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Хочу/Могу</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Базовый гардероб</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Луки-неделька</a>
+                  </li>
+                  <li class="link">
+                    <a href="#" class="dropdown-link-item">Aliexpress для дома</a>
+                  </li>
+                </ul>
+                <div class="dropdown-posts">
+                  <a href="#" class="post-item">
+                    <div class="image-wrap square-image">
+                      <img src="./assets/current-post-image.jpg" alt="post-image">
+                    </div>
+                    <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+                  </a>
+                  <a href="#" class="post-item">
+                    <div class="image-wrap square-image">
+                      <img src="./assets/current-post-image.jpg" alt="post-image">
+                    </div>
+                    <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+                  </a>
+                  <a href="#" class="post-item">
+                    <div class="image-wrap square-image">
+                      <img src="./assets/current-post-image.jpg" alt="post-image">
+                    </div>
+                    <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+                  </a>
+                </div>
+              </div>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Лайфхаки</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Лайфхаки</span>
+              </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Q&A</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Q&A</span>
+              </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">Об авторе</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Об авторе</span>
+              </a>
             </li>
             <li class="menu-item active">
-              <a href="#" class="menu-item-link">Контакты</a>
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Контакты</span>
+              </a>
             </li>
           </ul>
           <div class="social-networks">
@@ -45,6 +94,23 @@
             </a>
           </div>
         </div>
+        <div class="search-main-wrap">
+          <form class="search-wrap">
+            <label>
+              <input class="search-field" placeholder="Найти интересную тему.." type="text" />
+            </label>
+            <button type="submit" class="search-button">
+              <img src="./assets/icons/search.svg" alt="search">
+            </button>
+          </form>
+          <button class="menu-button">
+            <img src="./assets/icons/menu.svg" alt="menu">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-mobile">
+      <div class="container">
         <form class="search-wrap">
           <label>
             <input class="search-field" placeholder="Найти интересную тему.." type="text" />
@@ -53,66 +119,144 @@
             <img src="./assets/icons/search.svg" alt="search">
           </button>
         </form>
+        <div class="header-mobile-content">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">AliExpress</span>
+              </a>
+              <ul class="nested-menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Посты</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Хочу/Могу</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Базовый гардероб</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Луки-неделька</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item-link">
+                    <span class="link-text">Aliexpress для дома</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Лайфхаки</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Q&A</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Об авторе</span>
+              </a>
+            </li>
+            <li class="menu-item active">
+              <a href="#" class="menu-item-link">
+                <span class="link-text">Контакты</span>
+              </a>
+            </li>
+          </ul>
+          <div class="recent-posts">
+            <a href="#" class="post-item">
+              <div class="image-wrap square-image">
+                <img src="./assets/current-post-image.jpg" alt="post-image">
+              </div>
+              <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+            </a>
+            <a href="#" class="post-item">
+              <div class="image-wrap square-image">
+                <img src="./assets/current-post-image.jpg" alt="post-image">
+              </div>
+              <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+            </a>
+            <a href="#" class="post-item">
+              <div class="image-wrap square-image">
+                <img src="./assets/current-post-image.jpg" alt="post-image">
+              </div>
+              <h4 class="post-title">Тренды осень-зима 2021/2022 с АлиЭкспресс</h4>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-  <section class="breadcrumbs">
-    <div class="container">
-      <div class="section-content">
-        <!-- span or a -->
-        <a class="breadcrumb" href="#">Главная</a>
-        <span class="breadcrumb active">Контакты</span>
-      </div>
-    </div>
-  </section>
-  <section class="contacts">
-    <div class="container">
-      <div class="section-content">
-        <h2 class="section-title">Присединяйтесь к нам!</h2>
-        <p class="section-description">При выборе грубых ботинок стоит обратить внимание на подошву — у трендовых моделей она необычная. Для любителей быть на высоте — обувь на платформе.</p>
-        <div class="social-networks">
-          <a href="#" class="network-item">
-            <button class="link-icon-button">
-              <img src="./assets/icons/vk.svg" alt="vk">
-            </button>
-            <span class="button-text">ALYATREND</span>
-          </a>
-          <a href="#" class="network-item">
-            <button class="link-icon-button">
-              <img src="./assets/icons/tg.svg" alt="tg">
-            </button>
-            <span class="button-text">t.me/ALYATREND.blog</span>
-          </a>
-          <a href="#" class="network-item">
-            <button class="link-icon-button">
-              <img src="./assets/icons/tg.svg" alt="tg">
-            </button>
-            <span class="button-text">t.me/ALYATREND.info</span>
-          </a>
+  <main>
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="section-content">
+          <!-- span or a -->
+          <a class="breadcrumb" href="#">Главная</a>
+          <span class="breadcrumb active">Контакты</span>
         </div>
-        <h2 class="section-title">Напишите мне</h2>
-        <p class="section-description mail">
-          По вопросам рекламы и сотрудничества, а также по любым личным вопросам вы можете связаться со мной по почте <a
-          href="mailto:alyatrend@mail.ru">alyatrend@mail.ru</a> или заполнив форму
-        </p>
-        <form class="contacts-form">
-          <label class="form-item-wrap">
-            <input placeholder="Введите Ваше имя" type="text" class="form-item">
-          </label>
-          <label class="form-item-wrap">
-            <input placeholder="Введите Ваш E-mail" type="text" class="form-item">
-          </label>
-          <label class="form-item-wrap">
-            <textarea placeholder="Введите Ваш E-mail" class="form-item"></textarea>
-          </label>
-          <button type="submit" class="brand-btn">
-            Отправить сообщение
-            <img src="./assets/icons/arrow-next.svg" alt="arrow">
-          </button>
-        </form>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">Присединяйтесь к нам!</h2>
+          <p class="section-description">При выборе грубых ботинок стоит обратить внимание на подошву — у трендовых моделей она необычная. Для любителей быть на высоте — обувь на платформе.</p>
+          <div class="social-networks">
+            <a href="#" class="network-item">
+              <button class="link-icon-button">
+                <img src="./assets/icons/vk.svg" alt="vk">
+              </button>
+              <span class="button-text">ALYATREND</span>
+            </a>
+            <a href="#" class="network-item">
+              <button class="link-icon-button">
+                <img src="./assets/icons/tg.svg" alt="tg">
+              </button>
+              <span class="button-text">t.me/ALYATREND.blog</span>
+            </a>
+            <a href="#" class="network-item">
+              <button class="link-icon-button">
+                <img src="./assets/icons/tg.svg" alt="tg">
+              </button>
+              <span class="button-text">t.me/ALYATREND.info</span>
+            </a>
+          </div>
+          <h2 class="section-title">Напишите мне</h2>
+          <p class="section-description mail">
+            По вопросам рекламы и сотрудничества, а также по любым личным вопросам вы можете связаться со мной по почте <a
+            href="mailto:alyatrend@mail.ru">alyatrend@mail.ru</a> или заполнив форму
+          </p>
+          <form class="contacts-form">
+            <label class="form-item-wrap">
+              <input placeholder="Введите Ваше имя" type="text" class="form-item">
+            </label>
+            <label class="form-item-wrap">
+              <input placeholder="Введите Ваш E-mail" type="text" class="form-item">
+            </label>
+            <label class="form-item-wrap">
+              <textarea placeholder="Введите Ваш E-mail" class="form-item"></textarea>
+            </label>
+            <button type="submit" class="brand-btn">
+              Отправить сообщение
+              <img src="./assets/icons/arrow-next.svg" alt="arrow">
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -169,5 +313,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="./scripts/menu.js"></script>
 </body>
 </html>
